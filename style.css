@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Stopwatch Container Box */
+#container {
+    width: 50%;
+    height: 40vh;
+    margin: 30vh auto;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+
+/* Screen */
+#screen {
+    width: 98%;
+    height: 70%;
+    border: 1px solid black;
+    margin: 7px auto;
+    background-color: white;
+}
+
+/* Timer */
+#timer {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+/* Controller */
+#controller {
+    margin-top: 4%;
+}
