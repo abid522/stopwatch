@@ -6,11 +6,15 @@ body {
     box-sizing: border-box;
 }
 
+h1 {
+    background-color: cadetblue;
+}
+
 /* Stopwatch Container Box */
 #container {
     width: 50%;
     height: 40vh;
-    margin: 30vh auto;
+    margin: 25vh auto;
     border: 1px solid black;
     background-color: lightgray;
 }
@@ -26,9 +30,10 @@ body {
 
 /* Timer */
 #timer {
-    position: absolute;
-    top: 40%;
-    left: 45%;
+    text-align: center;
+    position: relative;
+    top: 35%;
+    left: 40%;
     font-size: 2.5rem;
     font-weight: bolder;
 }
@@ -36,4 +41,9 @@ body {
 /* Controller */
 #controller {
     margin-top: 4%;
+}
+
+/* changing tens part color */
+#tens {
+    color: blue;
 }

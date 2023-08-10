@@ -6,23 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stopwatch</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <h1 class="text-center p-3">Stopwatch <span id="icon"><i class="fa-solid fa-stopwatch"></i></span></h1>
     <div id="container">
         <div id="screen">
-            <span id="timer">00:00</span>
+            <span id="timer">
+                <span id="min"></span>:<span id="sec"></span>.<span id="tens"></span>
+            </span>
         </div>
         <div id="controller" class="d-flex justify-content-around">
             <div>
-                <button class="btn btn-success btn-block">Start</button>
+                <button id="start" class="btn btn-success btn-block">Start</button>
             </div>
             <div>
-                <button class="btn btn-danger">Stop</button>
+                <button id="pause" class="btn btn-danger">Pause</button>
             </div>
             <div>
-                <button class="btn btn-info">Reset</button>
+                <button id="reset" class="btn btn-info">Reset</button>
             </div>
         </div>
     </div>
